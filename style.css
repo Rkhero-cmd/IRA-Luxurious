@@ -66,8 +66,8 @@ header{
 .navlinks{display:flex; gap:30px; list-style:none; font-size:0.82rem; letter-spacing:0.06em; text-transform:uppercase;}
 .navlinks a{color:var(--muted); transition:color .25s;}
 .navlinks a:hover, .navlinks a.active{color:var(--gold-light);}
-.navcta{border:1px solid var(--gold); color:var(--gold-light) !important; padding:9px 20px; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; transition:all .25s; border-radius:var(--radius);}
-.navcta:hover{background:var(--gold); color:#fff !important;}
+.navcta{background:linear-gradient(135deg, var(--gold), #B5652F); border:1px solid var(--gold); color:#fff !important; padding:10px 22px; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; transition:all .25s; border-radius:30px; box-shadow:0 6px 16px rgba(201,123,79,0.3);}
+.navcta:hover{background:transparent; color:var(--gold) !important; box-shadow:none;}
 .burger{display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:0;}
 .burger span{width:24px; height:1px; background:var(--gold-light);}
 
@@ -116,10 +116,22 @@ header{
 .hero-stats b{display:block; font-family:'Playfair Display',serif; font-size:1.6rem; color:var(--gold-light);}
 .hero-stats span{font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted);}
 
-.btn{display:inline-block; background:var(--gold); color:#fff; padding:14px 32px; font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase; border:1px solid var(--gold); transition:all .25s; border-radius:var(--radius);}
-.btn:hover{background:transparent; color:var(--gold-light);}
-.btn-ghost{display:inline-block; background:transparent; color:var(--gold-light); padding:14px 32px; font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase; border:1px solid var(--line); margin-left:14px; transition:all .25s; border-radius:var(--radius);}
-.btn-ghost:hover{border-color:var(--gold);}
+.btn{display:inline-block; background:linear-gradient(135deg, var(--gold), #B5652F); color:#fff; padding:15px 34px; font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase; border:1px solid var(--gold); transition:all .25s; border-radius:30px; box-shadow:0 10px 24px rgba(201,123,79,0.35); font-weight:500;}
+.btn:hover{background:transparent; color:var(--gold); box-shadow:0 4px 12px rgba(201,123,79,0.2); transform:translateY(-1px);}
+.btn-ghost{display:inline-block; background:transparent; color:var(--gold-light); padding:15px 34px; font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase; border:1px solid var(--line); margin-left:14px; transition:all .25s; border-radius:30px;}
+.btn-ghost:hover{border-color:var(--gold); background:rgba(201,123,79,0.06);}
+
+/* ---------- trust badges (below hero CTA, glass pill style) ---------- */
+.trust-badges{display:flex; flex-wrap:wrap; gap:14px; margin-top:38px;}
+.trust-badge{
+  display:flex; align-items:center; gap:10px;
+  background:rgba(255,255,255,0.55); backdrop-filter:blur(6px);
+  border:1px solid rgba(201,123,79,0.25);
+  padding:10px 20px; border-radius:30px;
+  font-size:0.78rem; letter-spacing:0.02em; color:var(--gold-light); font-weight:500;
+  box-shadow:0 6px 16px rgba(59,42,30,0.06);
+}
+.trust-badge svg{width:18px; height:18px; stroke:var(--gold); fill:none; stroke-width:1.6; flex-shrink:0;}
 
 /* ---------- sections ---------- */
 section{padding:90px 0;}
